@@ -20240,8 +20240,8 @@ do -- AsterTabUI: scoped block avoids main-chunk local register limit
                 stopGoldCircuit()
             end
         end)
-    ASTER.Tabs.Main:AddSlider("Tween Speed", 1, 16, math.clamp(tonumber(Settings.GoldSpeed) or 16, 1, 16), 1, function(v)
-        Settings.GoldSpeed = math.clamp(tonumber(v) or 16, 1, 16)
+    ASTER.Tabs.Main:AddSlider("Tween Speed", 1, 25, math.clamp(tonumber(Settings.GoldSpeed) or 16, 1, 25), 1, function(v)
+        Settings.GoldSpeed = math.clamp(tonumber(v) or 16, 1, 25)
         WALK_SPEED = Settings.GoldSpeed
     end)
     ASTER.Tabs.Main:AddSlider("Gold Delay", 0.25, 2, math.max(tonumber(Settings.GoldDelay) or 0.25, 0.25), 0.01, function(v) 
